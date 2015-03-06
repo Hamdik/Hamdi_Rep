@@ -1,0 +1,3 @@
+generale_homepage:
+    path:     /
+    defaults: { _controller: GeneraleBundle:Default:index }
