@@ -19,3 +19,17 @@ ab1414,127.0.0.1,POST,http://localhost/blogSf/web/app_dev.php/login_check,142559
 b09cf4,127.0.0.1,GET,http://localhost/blogSf/web/app_dev.php/,1425595901,
 46c6d2,127.0.0.1,GET,http://localhost/blogSf/web/app_dev.php/js/bootstrap.min.js,1425595905,4d9a54
 4d9a54,127.0.0.1,GET,http://localhost/blogSf/web/app_dev.php/js/bootstrap.min.js,1425595905,
+477975,127.0.0.1,GET,http://localhost/blogSf/web/app_dev.php/,1425767885,
+a1c684,127.0.0.1,GET,http://localhost/blogSf/web/app_dev.php/js/bootstrap.min.js,1425767890,cc064d
+cc064d,127.0.0.1,GET,http://localhost/blogSf/web/app_dev.php/js/bootstrap.min.js,1425767891,
+999492,127.0.0.1,GET,http://localhost/blogSf/web/app_dev.php/login,1425767906,
+579814,127.0.0.1,POST,http://localhost/blogSf/web/app_dev.php/login_check,1425768314,
+a042cf,127.0.0.1,GET,http://localhost/blogSf/web/app_dev.php/,1425768317,
+1a561a,127.0.0.1,GET,http://localhost/blogSf/web/app_dev.php/js/bootstrap.min.js,1425768320,5dca7d
+5dca7d,127.0.0.1,GET,http://localhost/blogSf/web/app_dev.php/js/bootstrap.min.js,1425768321,
+0640ee,127.0.0.1,POST,http://localhost/blogSf/web/app_dev.php/login_check,1425768329,
+7e753e,127.0.0.1,GET,http://localhost/blogSf/web/app_dev.php/login,1425768332,
+51098b,127.0.0.1,POST,http://localhost/blogSf/web/app_dev.php/login_check,1425768355,
+1f7a2c,127.0.0.1,GET,http://localhost/blogSf/web/app_dev.php/,1425768357,
+2ccc23,127.0.0.1,GET,http://localhost/blogSf/web/app_dev.php/js/bootstrap.min.js,1425768361,4f5ebe
+4f5ebe,127.0.0.1,GET,http://localhost/blogSf/web/app_dev.php/js/bootstrap.min.js,1425768362,
