@@ -77,6 +77,7 @@
   'SwiftmailerBundle:Collector:swiftmailer.html.twig' => 'F:\\wamp\\www\\blogSf\\vendor\\symfony\\swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig',
   'DoctrineBundle:Collector:db.html.twig' => 'F:\\wamp\\www\\blogSf\\vendor\\doctrine\\doctrine-bundle/Resources/views/Collector/db.html.twig',
   'DoctrineBundle:Collector:explain.html.twig' => 'F:\\wamp\\www\\blogSf\\vendor\\doctrine\\doctrine-bundle/Resources/views/Collector/explain.html.twig',
+  'GeneraleBundle:Default:ajouter.html.twig' => 'F:\\wamp\\www\\blogSf\\src\\Blog\\GeneraleBundle/Resources/views/Default/ajouter.html.twig',
   'GeneraleBundle:Default:index.html.twig' => 'F:\\wamp\\www\\blogSf\\src\\Blog\\GeneraleBundle/Resources/views/Default/index.html.twig',
   'UserBundle:ChangePassword:changePassword.html.twig' => 'F:\\wamp\\www\\blogSf\\src\\Blog\\UserBundle/Resources/views/ChangePassword/changePassword.html.twig',
   'UserBundle:ChangePassword:changePassword_content.html.twig' => 'F:\\wamp\\www\\blogSf\\src\\Blog\\UserBundle/Resources/views/ChangePassword/changePassword_content.html.twig',

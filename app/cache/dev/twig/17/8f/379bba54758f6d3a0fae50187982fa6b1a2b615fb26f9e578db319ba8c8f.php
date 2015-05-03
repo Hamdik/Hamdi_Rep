@@ -56,7 +56,7 @@ class __TwigTemplate_178f379bba54758f6d3a0fae50187982fa6b1a2b615fb26f9e578db319b
     <style>
         ";
             // line 22
-            $this->env->loadTemplate("@WebProfiler/Profiler/toolbar.css.twig")->display(array_merge($context, array("position" => (isset($context["position"]) ? $context["position"] : $this->getContext($context, "position")), "floatable" => true)));
+            $this->loadTemplate("@WebProfiler/Profiler/toolbar.css.twig", "WebProfilerBundle:Profiler:toolbar.html.twig", 22)->display(array_merge($context, array("position" => (isset($context["position"]) ? $context["position"] : $this->getContext($context, "position")), "floatable" => true)));
             // line 23
             echo "    </style>
     <div id=\"sfToolbarClearer-";

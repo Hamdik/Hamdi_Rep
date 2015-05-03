@@ -8,15 +8,7 @@ class __TwigTemplate_a1bff063852e29c1549c36bf83d99293563824663be8f6a5bfedd0d9dcc
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("FOSUserBundle::layout.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("FOSUserBundle::layout.html.twig", "UserBundle:Resetting:passwordAlreadyRequested.html.twig", 1);
         $this->blocks = array(
             'fos_user_content' => array($this, 'block_fos_user_content'),
         );
@@ -54,6 +46,6 @@ class __TwigTemplate_a1bff063852e29c1549c36bf83d99293563824663be8f6a5bfedd0d9dcc
 
     public function getDebugInfo()
     {
-        return array (  39 => 6,  36 => 5,  11 => 1,);
+        return array (  31 => 6,  28 => 5,  11 => 1,);
     }
 }

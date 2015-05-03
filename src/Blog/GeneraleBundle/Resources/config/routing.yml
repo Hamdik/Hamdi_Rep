@@ -1,3 +1,7 @@
 generale_homepage:
     path:     /
     defaults: { _controller: GeneraleBundle:Default:index }
+
+generale_ajouter:
+    path:     /ajouter
+    defaults: { _controller: GeneraleBundle:Default:ajouter }

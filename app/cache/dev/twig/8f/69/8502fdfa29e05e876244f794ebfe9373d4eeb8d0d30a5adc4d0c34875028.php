@@ -8,15 +8,7 @@ class __TwigTemplate_8f698502fdfa29e05e876244f794ebfe9373d4eeb8d0d30a5adc4d0c348
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("@WebProfiler/Profiler/layout.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("@WebProfiler/Profiler/layout.html.twig", "@WebProfiler/Collector/exception.html.twig", 1);
         $this->blocks = array(
             'head' => array($this, 'block_head'),
             'menu' => array($this, 'block_menu'),
@@ -115,6 +107,6 @@ class __TwigTemplate_8f698502fdfa29e05e876244f794ebfe9373d4eeb8d0d30a5adc4d0c348
 
     public function getDebugInfo()
     {
-        return array (  99 => 33,  96 => 32,  90 => 28,  88 => 27,  84 => 25,  81 => 24,  75 => 20,  71 => 18,  69 => 17,  63 => 13,  60 => 12,  53 => 9,  47 => 6,  44 => 5,  41 => 4,  38 => 3,  11 => 1,);
+        return array (  91 => 33,  88 => 32,  82 => 28,  80 => 27,  76 => 25,  73 => 24,  67 => 20,  63 => 18,  61 => 17,  55 => 13,  52 => 12,  45 => 9,  39 => 6,  36 => 5,  33 => 4,  30 => 3,  11 => 1,);
     }
 }

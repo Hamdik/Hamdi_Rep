@@ -19,7 +19,7 @@ class __TwigTemplate_330ef33e6183bdddd799b16e498a29ce490272176df1a59841500f33e2c
         echo "/*
 ";
         // line 2
-        $this->env->loadTemplate("TwigBundle:Exception:exception.txt.twig")->display(array_merge($context, array("exception" => (isset($context["exception"]) ? $context["exception"] : $this->getContext($context, "exception")))));
+        $this->loadTemplate("TwigBundle:Exception:exception.txt.twig", "TwigBundle:Exception:exception.css.twig", 2)->display(array_merge($context, array("exception" => (isset($context["exception"]) ? $context["exception"] : $this->getContext($context, "exception")))));
         // line 3
         echo "*/
 ";

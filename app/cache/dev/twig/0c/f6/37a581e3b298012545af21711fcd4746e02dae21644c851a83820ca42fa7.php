@@ -32,7 +32,7 @@ class __TwigTemplate_0cf637a581e3b298012545af21711fcd4746e02dae21644c851a83820ca
         <style>
             ";
         // line 9
-        $this->env->loadTemplate("@WebProfiler/Profiler/body.css.twig")->display($context);
+        $this->loadTemplate("@WebProfiler/Profiler/body.css.twig", "@WebProfiler/Profiler/base.html.twig", 9)->display($context);
         // line 10
         echo "        </style>
         ";
@@ -42,7 +42,7 @@ class __TwigTemplate_0cf637a581e3b298012545af21711fcd4746e02dae21644c851a83820ca
         echo "        <style>
             ";
         // line 17
-        $this->env->loadTemplate("@WebProfiler/Profiler/toolbar.css.twig")->display(array_merge($context, array("position" => "top", "floatable" => false)));
+        $this->loadTemplate("@WebProfiler/Profiler/toolbar.css.twig", "@WebProfiler/Profiler/base.html.twig", 17)->display(array_merge($context, array("position" => "top", "floatable" => false)));
         // line 18
         echo "        </style>
     </head>
@@ -69,7 +69,7 @@ class __TwigTemplate_0cf637a581e3b298012545af21711fcd4746e02dae21644c851a83820ca
         echo "            <style>
                 ";
         // line 13
-        $this->env->loadTemplate("@WebProfiler/Profiler/profiler.css.twig")->display($context);
+        $this->loadTemplate("@WebProfiler/Profiler/profiler.css.twig", "@WebProfiler/Profiler/base.html.twig", 13)->display($context);
         // line 14
         echo "            </style>
         ";

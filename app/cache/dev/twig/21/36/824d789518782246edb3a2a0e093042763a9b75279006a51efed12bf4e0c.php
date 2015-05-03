@@ -8,15 +8,7 @@ class __TwigTemplate_2136824d789518782246edb3a2a0e093042763a9b75279006a51efed12b
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("@WebProfiler/Profiler/base.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("@WebProfiler/Profiler/base.html.twig", "WebProfilerBundle:Profiler:info.html.twig", 1);
         $this->blocks = array(
             'body' => array($this, 'block_body'),
             'panel' => array($this, 'block_panel'),
@@ -40,7 +32,7 @@ class __TwigTemplate_2136824d789518782246edb3a2a0e093042763a9b75279006a51efed12b
         echo "    <div id=\"content\">
         ";
         // line 5
-        $this->env->loadTemplate("@WebProfiler/Profiler/header.html.twig")->display(array());
+        $this->loadTemplate("@WebProfiler/Profiler/header.html.twig", "WebProfilerBundle:Profiler:info.html.twig", 5)->display(array());
         // line 6
         echo "
         <div id=\"main\">
@@ -60,7 +52,7 @@ class __TwigTemplate_2136824d789518782246edb3a2a0e093042763a9b75279006a51efed12b
         echo "
                     ";
         // line 38
-        $this->env->loadTemplate("@WebProfiler/Profiler/admin.html.twig")->display(array("token" => ""));
+        $this->loadTemplate("@WebProfiler/Profiler/admin.html.twig", "WebProfilerBundle:Profiler:info.html.twig", 38)->display(array("token" => ""));
         // line 39
         echo "                </div>
             </div>
@@ -125,6 +117,6 @@ class __TwigTemplate_2136824d789518782246edb3a2a0e093042763a9b75279006a51efed12b
 
     public function getDebugInfo()
     {
-        return array (  113 => 33,  107 => 30,  103 => 28,  101 => 27,  95 => 23,  93 => 22,  87 => 18,  85 => 17,  79 => 13,  76 => 12,  73 => 11,  65 => 39,  63 => 38,  59 => 37,  54 => 34,  52 => 11,  45 => 6,  43 => 5,  40 => 4,  37 => 3,  11 => 1,);
+        return array (  105 => 33,  99 => 30,  95 => 28,  93 => 27,  87 => 23,  85 => 22,  79 => 18,  77 => 17,  71 => 13,  68 => 12,  65 => 11,  57 => 39,  55 => 38,  51 => 37,  46 => 34,  44 => 11,  37 => 6,  35 => 5,  32 => 4,  29 => 3,  11 => 1,);
     }
 }

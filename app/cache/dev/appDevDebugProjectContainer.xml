@@ -2736,7 +2736,7 @@
         </argument>
       </call>
       <call method="addXmlMapping">
-        <argument>F:\wamp\www\blogSf\vendor\friendsofsymfony\user-bundle\DependencyInjection\Compiler/../../Resources/config/validation/orm.xml</argument>
+        <argument>F:\wamp\www\blogSf\vendor\friendsofsymfony\user-bundle\DependencyInjection\Compiler/../../Resources/config/storage-validation/orm.xml</argument>
       </call>
     </service>
     <service id="validator.expression" class="Symfony\Component\Validator\Constraints\ExpressionValidator">
@@ -2988,7 +2988,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>54f8db19877a9</argument>
+            <argument>553d6c02773c6</argument>
           </service>
         </argument>
       </argument>
@@ -3258,7 +3258,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.context"/>
-            <argument>54f8db19877a9</argument>
+            <argument>553d6c02773c6</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
           </service>
         </argument>
@@ -3737,6 +3737,7 @@
         <service class="Doctrine\ORM\Configuration" public="false">
           <call method="setEntityNamespaces">
             <argument type="collection">
+              <argument key="GeneraleBundle">Blog\GeneraleBundle\Entity</argument>
               <argument key="UserBundle">Blog\UserBundle\Entity</argument>
             </argument>
           </call>
@@ -3757,6 +3758,19 @@
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
+                        <argument>F:\wamp\www\blogSf\src\Blog\GeneraleBundle\Entity</argument>
+                        <argument>F:\wamp\www\blogSf\src\Blog\UserBundle\Entity</argument>
+                      </argument>
+                    </service>
+                  </argument>
+                  <argument>Blog\GeneraleBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
+                      <argument type="service" id="annotation_reader"/>
+                      <argument type="collection">
+                        <argument>F:\wamp\www\blogSf\src\Blog\GeneraleBundle\Entity</argument>
                         <argument>F:\wamp\www\blogSf\src\Blog\UserBundle\Entity</argument>
                       </argument>
                     </service>
@@ -3769,7 +3783,7 @@
                       <argument type="service">
                         <service class="Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator">
                           <argument type="collection">
-                            <argument key="F:\wamp\www\blogSf\vendor\friendsofsymfony\user-bundle\Resources\config\doctrine\model">FOS\UserBundle\Model</argument>
+                            <argument key="F:\wamp\www\blogSf\vendor\friendsofsymfony\user-bundle\Resources\config\doctrine-mapping">FOS\UserBundle\Model</argument>
                           </argument>
                           <argument>.orm.xml</argument>
                         </service>
@@ -3854,6 +3868,8 @@
       </argument>
       <argument type="service" id="security.authentication.trust_resolver" on-invalid="null"/>
       <argument type="service" id="security.role_hierarchy" on-invalid="null"/>
+      <argument>null</argument>
+      <argument>null</argument>
     </service>
     <service id="fos_user.security.interactive_login_listener" class="FOS\UserBundle\EventListener\LastLoginListener">
       <tag name="kernel.event_subscriber"/>

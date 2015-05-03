@@ -8,15 +8,7 @@ class __TwigTemplate_f57f2a6d94b0d90abb60c0a8a5b7bc4b6eb6d8602e47581d66589b885b2
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("@WebProfiler/Profiler/layout.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("@WebProfiler/Profiler/layout.html.twig", "WebProfilerBundle:Collector:memory.html.twig", 1);
         $this->blocks = array(
             'toolbar' => array($this, 'block_toolbar'),
         );
@@ -65,7 +57,7 @@ class __TwigTemplate_f57f2a6d94b0d90abb60c0a8a5b7bc4b6eb6d8602e47581d66589b885b2
         $context["text"] = ('' === $tmp = ob_get_clean()) ? '' : new Twig_Markup($tmp, $this->env->getCharset());
         // line 16
         echo "    ";
-        $this->env->loadTemplate("@WebProfiler/Profiler/toolbar_item.html.twig")->display(array_merge($context, array("link" => false)));
+        $this->loadTemplate("@WebProfiler/Profiler/toolbar_item.html.twig", "WebProfilerBundle:Collector:memory.html.twig", 16)->display(array_merge($context, array("link" => false)));
     }
 
     public function getTemplateName()
@@ -80,6 +72,6 @@ class __TwigTemplate_f57f2a6d94b0d90abb60c0a8a5b7bc4b6eb6d8602e47581d66589b885b2
 
     public function getDebugInfo()
     {
-        return array (  67 => 16,  59 => 13,  55 => 11,  52 => 10,  46 => 7,  42 => 5,  39 => 4,  36 => 3,  11 => 1,);
+        return array (  59 => 16,  51 => 13,  47 => 11,  44 => 10,  38 => 7,  34 => 5,  31 => 4,  28 => 3,  11 => 1,);
     }
 }

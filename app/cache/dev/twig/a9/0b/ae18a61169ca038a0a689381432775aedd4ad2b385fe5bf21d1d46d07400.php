@@ -8,15 +8,7 @@ class __TwigTemplate_a90bae18a61169ca038a0a689381432775aedd4ad2b385fe5bf21d1d46d
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("@WebProfiler/Profiler/layout.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("@WebProfiler/Profiler/layout.html.twig", "WebProfilerBundle:Collector:events.html.twig", 1);
         $this->blocks = array(
             'menu' => array($this, 'block_menu'),
             'panel' => array($this, 'block_panel'),
@@ -32,7 +24,7 @@ class __TwigTemplate_a90bae18a61169ca038a0a689381432775aedd4ad2b385fe5bf21d1d46d
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 3
-        $context["__internal_9d06de83ebda5361a0bcf2ef1c5d4f7b521695d51ae5ccace844244dd8112e6d"] = $this;
+        $context["__internal_82c57ffdc9a043b8adeb3e06c877e9481d1732bf47359750c35ef2bc3aee4912"] = $this;
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
@@ -93,7 +85,7 @@ class __TwigTemplate_a90bae18a61169ca038a0a689381432775aedd4ad2b385fe5bf21d1d46d
             echo "</code></td>
                 <td><code>";
             // line 34
-            echo $context["__internal_9d06de83ebda5361a0bcf2ef1c5d4f7b521695d51ae5ccace844244dd8112e6d"]->getdisplay_listener($context["listener"]);
+            echo $context["__internal_82c57ffdc9a043b8adeb3e06c877e9481d1732bf47359750c35ef2bc3aee4912"]->getdisplay_listener($context["listener"]);
             echo "</code></td>
             </tr>
         ";
@@ -131,7 +123,7 @@ class __TwigTemplate_a90bae18a61169ca038a0a689381432775aedd4ad2b385fe5bf21d1d46d
                 echo "</code></td>
                     <td><code>";
                 // line 51
-                echo $context["__internal_9d06de83ebda5361a0bcf2ef1c5d4f7b521695d51ae5ccace844244dd8112e6d"]->getdisplay_listener($this->getAttribute((isset($context["listeners"]) ? $context["listeners"] : $this->getContext($context, "listeners")), $context["listener"], array(), "array"));
+                echo $context["__internal_82c57ffdc9a043b8adeb3e06c877e9481d1732bf47359750c35ef2bc3aee4912"]->getdisplay_listener($this->getAttribute((isset($context["listeners"]) ? $context["listeners"] : $this->getContext($context, "listeners")), $context["listener"], array(), "array"));
                 echo "</code></td>
                 </tr>
             ";
@@ -234,6 +226,6 @@ class __TwigTemplate_a90bae18a61169ca038a0a689381432775aedd4ad2b385fe5bf21d1d46d
 
     public function getDebugInfo()
     {
-        return array (  214 => 78,  201 => 77,  198 => 76,  195 => 75,  184 => 74,  181 => 73,  179 => 72,  176 => 71,  173 => 70,  162 => 69,  147 => 56,  143 => 54,  134 => 51,  130 => 50,  127 => 49,  122 => 48,  120 => 47,  113 => 42,  111 => 41,  105 => 37,  96 => 34,  92 => 33,  89 => 32,  85 => 31,  76 => 24,  73 => 23,  64 => 16,  58 => 14,  55 => 13,  52 => 12,  44 => 6,  41 => 5,  37 => 1,  35 => 3,  11 => 1,);
+        return array (  206 => 78,  193 => 77,  190 => 76,  187 => 75,  176 => 74,  173 => 73,  171 => 72,  168 => 71,  165 => 70,  154 => 69,  139 => 56,  135 => 54,  126 => 51,  122 => 50,  119 => 49,  114 => 48,  112 => 47,  105 => 42,  103 => 41,  97 => 37,  88 => 34,  84 => 33,  81 => 32,  77 => 31,  68 => 24,  65 => 23,  56 => 16,  50 => 14,  47 => 13,  44 => 12,  36 => 6,  33 => 5,  29 => 1,  27 => 3,  11 => 1,);
     }
 }

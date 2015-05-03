@@ -21,7 +21,7 @@ class __TwigTemplate_3a2891ab70981a5ec49f4bedc933f0d18516408660e995f42dfe1285644
         echo "\" class=\"sf-toolbar\" style=\"display: none\"></div>
 ";
         // line 2
-        $this->env->loadTemplate("@WebProfiler/Profiler/base_js.html.twig")->display($context);
+        $this->loadTemplate("@WebProfiler/Profiler/base_js.html.twig", "@WebProfiler/Profiler/toolbar_js.html.twig", 2)->display($context);
         // line 3
         echo "<script>/*<![CDATA[*/
     (function () {

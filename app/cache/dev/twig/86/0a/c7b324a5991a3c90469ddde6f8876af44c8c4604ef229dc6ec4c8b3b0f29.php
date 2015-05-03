@@ -8,15 +8,7 @@ class __TwigTemplate_860ac7b324a5991a3c90469ddde6f8876af44c8c4604ef229dc6ec4c8b3
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("AcmeDemoBundle::layout.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("AcmeDemoBundle::layout.html.twig", "AcmeDemoBundle:Demo:hello.html.twig", 1);
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'content' => array($this, 'block_content'),
@@ -46,7 +38,7 @@ class __TwigTemplate_860ac7b324a5991a3c90469ddde6f8876af44c8c4604ef229dc6ec4c8b3
     public function block_content($context, array $blocks = array())
     {
         // line 6
-        echo "    <h1>Hello ";
+        echo "    <h1>Hello - ";
         echo twig_escape_filter($this->env, (isset($context["name"]) ? $context["name"] : $this->getContext($context, "name")), "html", null, true);
         echo "!</h1>
 ";
@@ -64,6 +56,6 @@ class __TwigTemplate_860ac7b324a5991a3c90469ddde6f8876af44c8c4604ef229dc6ec4c8b3
 
     public function getDebugInfo()
     {
-        return array (  49 => 6,  46 => 5,  40 => 3,  36 => 1,  34 => 9,  11 => 1,);
+        return array (  41 => 6,  38 => 5,  32 => 3,  28 => 1,  26 => 9,  11 => 1,);
     }
 }

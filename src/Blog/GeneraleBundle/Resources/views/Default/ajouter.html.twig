@@ -1,0 +1,16 @@
+
+{% extends '::base.html.twig' %}
+{% block title %}Ajouter un animal{% endblock %}
+{% block body %}
+
+    <form action="{{ path("generale_ajouter")}}" method="post">
+
+
+        <h1 style="margin-top: 80px;">Ajouter un animal : <br/></h1>
+
+        {{ form_widget(form) }}
+
+        <input type="submit">
+    </form>
+
+{% endblock %}

@@ -2,3 +2,21 @@
 {% extends '::base.html.twig' %}
 
 {% block title %}Accueil{% endblock %}
+{% block body %}
+    {% for animal in animaux %}
+        <article style="margin-top: 80px;">
+            <header>
+                <h3 > Titre : {{ animal.titre }} </h3><br/>
+                <time>{{ animal.date|date ('d F Y h:m') }}</time><br/>
+            </header>
+            <div id="content">
+                <img src="{{ animal.url }} " alt="{{ animal.titre }}"/> <br/>
+                <p>
+                    <h3 > description : {{ animal.description }} </h3><br/>
+                </p>
+            </div>
+        </article>
+
+    {% endfor %}
+
+{% endblock %}

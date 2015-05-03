@@ -8,15 +8,7 @@ class __TwigTemplate_399bbfa0a10a21631d6fb19cd78f9b4f38147a1199da53b7142d5bbf88f
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("form_div_layout.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("form_div_layout.html.twig", "SensioDistributionBundle:Configurator:form.html.twig", 1);
         $this->blocks = array(
             'form_rows' => array($this, 'block_form_rows'),
             'form_row' => array($this, 'block_form_row'),
@@ -129,6 +121,6 @@ class __TwigTemplate_399bbfa0a10a21631d6fb19cd78f9b4f38147a1199da53b7142d5bbf88f
 
     public function getDebugInfo()
     {
-        return array (  116 => 33,  112 => 31,  110 => 30,  106 => 29,  101 => 28,  98 => 27,  95 => 26,  92 => 25,  89 => 24,  80 => 18,  75 => 16,  70 => 14,  67 => 13,  64 => 12,  53 => 8,  49 => 7,  44 => 5,  41 => 4,  38 => 3,  11 => 1,);
+        return array (  108 => 33,  104 => 31,  102 => 30,  98 => 29,  93 => 28,  90 => 27,  87 => 26,  84 => 25,  81 => 24,  72 => 18,  67 => 16,  62 => 14,  59 => 13,  56 => 12,  45 => 8,  41 => 7,  36 => 5,  33 => 4,  30 => 3,  11 => 1,);
     }
 }

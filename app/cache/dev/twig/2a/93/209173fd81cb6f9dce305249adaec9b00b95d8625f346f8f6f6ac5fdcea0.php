@@ -8,15 +8,7 @@ class __TwigTemplate_2a93209173fd81cb6f9dce305249adaec9b00b95d8625f346f8f6f6ac5f
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("AcmeDemoBundle::layout.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("AcmeDemoBundle::layout.html.twig", "AcmeDemoBundle:Welcome:index.html.twig", 1);
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'content_header' => array($this, 'block_content_header'),
@@ -183,6 +175,6 @@ class __TwigTemplate_2a93209173fd81cb6f9dce305249adaec9b00b95d8625f346f8f6f6ac5f
 
     public function getDebugInfo()
     {
-        return array (  166 => 79,  147 => 63,  143 => 62,  139 => 61,  135 => 60,  131 => 59,  114 => 45,  109 => 43,  105 => 41,  93 => 32,  88 => 30,  84 => 28,  82 => 27,  71 => 19,  66 => 17,  56 => 9,  53 => 8,  50 => 7,  44 => 5,  38 => 3,  11 => 1,);
+        return array (  158 => 79,  139 => 63,  135 => 62,  131 => 61,  127 => 60,  123 => 59,  106 => 45,  101 => 43,  97 => 41,  85 => 32,  80 => 30,  76 => 28,  74 => 27,  63 => 19,  58 => 17,  48 => 9,  45 => 8,  42 => 7,  36 => 5,  30 => 3,  11 => 1,);
     }
 }

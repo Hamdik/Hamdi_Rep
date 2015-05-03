@@ -8,15 +8,7 @@ class __TwigTemplate_a0ad3ddd1bc1873c582b5da4dbcc9559c3b198e9b53ce206c931cd52a03
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("@WebProfiler/Profiler/base.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("@WebProfiler/Profiler/base.html.twig", "WebProfilerBundle:Profiler:layout.html.twig", 1);
         $this->blocks = array(
             'body' => array($this, 'block_body'),
             'panel' => array($this, 'block_panel'),
@@ -46,7 +38,7 @@ class __TwigTemplate_a0ad3ddd1bc1873c582b5da4dbcc9559c3b198e9b53ce206c931cd52a03
     <div id=\"content\">
         ";
         // line 8
-        $this->env->loadTemplate("@WebProfiler/Profiler/header.html.twig")->display(array());
+        $this->loadTemplate("@WebProfiler/Profiler/header.html.twig", "WebProfilerBundle:Profiler:layout.html.twig", 8)->display(array());
         // line 9
         echo "
         <div id=\"main\">
@@ -101,7 +93,7 @@ class __TwigTemplate_a0ad3ddd1bc1873c582b5da4dbcc9559c3b198e9b53ce206c931cd52a03
                     <div id=\"collector-content\">
                         ";
         // line 31
-        $this->env->loadTemplate("@WebProfiler/Profiler/base_js.html.twig")->display($context);
+        $this->loadTemplate("@WebProfiler/Profiler/base_js.html.twig", "WebProfilerBundle:Profiler:layout.html.twig", 31)->display($context);
         // line 32
         echo "                        ";
         $this->displayBlock('panel', $context, $blocks);
@@ -167,7 +159,7 @@ class __TwigTemplate_a0ad3ddd1bc1873c582b5da4dbcc9559c3b198e9b53ce206c931cd52a03
         echo "
                     ";
         // line 57
-        $this->env->loadTemplate("@WebProfiler/Profiler/admin.html.twig")->display(array("token" => (isset($context["token"]) ? $context["token"] : $this->getContext($context, "token"))));
+        $this->loadTemplate("@WebProfiler/Profiler/admin.html.twig", "WebProfilerBundle:Profiler:layout.html.twig", 57)->display(array("token" => (isset($context["token"]) ? $context["token"] : $this->getContext($context, "token"))));
         // line 58
         echo "                </div>
             </div>
@@ -268,6 +260,6 @@ class __TwigTemplate_a0ad3ddd1bc1873c582b5da4dbcc9559c3b198e9b53ce206c931cd52a03
 
     public function getDebugInfo()
     {
-        return array (  254 => 32,  172 => 58,  170 => 57,  165 => 56,  153 => 46,  147 => 45,  139 => 42,  131 => 41,  128 => 40,  123 => 39,  119 => 38,  116 => 37,  114 => 36,  109 => 33,  106 => 32,  104 => 31,  100 => 29,  91 => 25,  88 => 24,  82 => 22,  74 => 20,  72 => 19,  68 => 18,  63 => 16,  60 => 15,  58 => 14,  51 => 9,  49 => 8,  43 => 5,  40 => 4,  37 => 3,  11 => 1,);
+        return array (  246 => 32,  164 => 58,  162 => 57,  157 => 56,  145 => 46,  139 => 45,  131 => 42,  123 => 41,  120 => 40,  115 => 39,  111 => 38,  108 => 37,  106 => 36,  101 => 33,  98 => 32,  96 => 31,  92 => 29,  83 => 25,  80 => 24,  74 => 22,  66 => 20,  64 => 19,  60 => 18,  55 => 16,  52 => 15,  50 => 14,  43 => 9,  41 => 8,  35 => 5,  32 => 4,  29 => 3,  11 => 1,);
     }
 }

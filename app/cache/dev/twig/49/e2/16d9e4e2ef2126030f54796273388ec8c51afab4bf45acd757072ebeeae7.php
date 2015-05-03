@@ -8,15 +8,7 @@ class __TwigTemplate_49e216d9e4e2ef2126030f54796273388ec8c51afab4bf45acd757072eb
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("FOSUserBundle::layout.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("FOSUserBundle::layout.html.twig", "UserBundle:Registration:checkEmail.html.twig", 1);
         $this->blocks = array(
             'fos_user_content' => array($this, 'block_fos_user_content'),
         );
@@ -54,6 +46,6 @@ class __TwigTemplate_49e216d9e4e2ef2126030f54796273388ec8c51afab4bf45acd757072eb
 
     public function getDebugInfo()
     {
-        return array (  39 => 6,  36 => 5,  11 => 1,);
+        return array (  31 => 6,  28 => 5,  11 => 1,);
     }
 }

@@ -80,7 +80,7 @@ class __TwigTemplate_e1260fa093a57ec6c2ff1f23089c730ebf9ecee1050fc2ed398e5380a03
     public function block_nav($context, array $blocks = array())
     {
         echo " ";
-        $this->env->loadTemplate("::nav.html.twig")->display($context);
+        $this->loadTemplate("::nav.html.twig", "::base.html.twig", 20)->display($context);
         echo " ";
     }
 

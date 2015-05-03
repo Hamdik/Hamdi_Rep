@@ -123,8 +123,8 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         // user_homepage
-        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'user_homepage')), array (  '_controller' => 'Blog\\UserBundle\\Controller\\DefaultController::indexAction',));
+        if ($pathinfo === '/login') {
+            return array (  '_controller' => 'Blog\\UserBundle\\Controller\\DefaultController::indexAction',  '_route' => 'user_homepage',);
         }
 
         // generale_homepage
@@ -134,6 +134,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             }
 
             return array (  '_controller' => 'Blog\\GeneraleBundle\\Controller\\DefaultController::indexAction',  '_route' => 'generale_homepage',);
+        }
+
+        // generale_ajouter
+        if ($pathinfo === '/ajouter') {
+            return array (  '_controller' => 'Blog\\GeneraleBundle\\Controller\\DefaultController::ajouterAction',  '_route' => 'generale_ajouter',);
         }
 
         if (0 === strpos($pathinfo, '/log')) {

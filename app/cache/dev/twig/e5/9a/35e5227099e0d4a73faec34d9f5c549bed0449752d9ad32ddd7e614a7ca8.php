@@ -8,15 +8,7 @@ class __TwigTemplate_e59a35e5227099e0d4a73faec34d9f5c549bed0449752d9ad32ddd7e614
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("AcmeDemoBundle::layout.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("AcmeDemoBundle::layout.html.twig", "AcmeDemoBundle:Secured:login.html.twig", 1);
         $this->blocks = array(
             'content' => array($this, 'block_content'),
         );
@@ -96,6 +88,6 @@ class __TwigTemplate_e59a35e5227099e0d4a73faec34d9f5c549bed0449752d9ad32ddd7e614
 
     public function getDebugInfo()
     {
-        return array (  67 => 17,  61 => 14,  58 => 13,  52 => 11,  50 => 10,  42 => 4,  39 => 3,  35 => 1,  33 => 35,  11 => 1,);
+        return array (  59 => 17,  53 => 14,  50 => 13,  44 => 11,  42 => 10,  34 => 4,  31 => 3,  27 => 1,  25 => 35,  11 => 1,);
     }
 }

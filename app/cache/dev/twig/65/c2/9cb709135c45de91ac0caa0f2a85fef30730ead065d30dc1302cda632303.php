@@ -8,15 +8,7 @@ class __TwigTemplate_65c29cb709135c45de91ac0caa0f2a85fef30730ead065d30dc1302cda6
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("@WebProfiler/Profiler/layout.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("@WebProfiler/Profiler/layout.html.twig", "SecurityBundle:Collector:security.html.twig", 1);
         $this->blocks = array(
             'toolbar' => array($this, 'block_toolbar'),
             'menu' => array($this, 'block_menu'),
@@ -131,7 +123,7 @@ class __TwigTemplate_65c29cb709135c45de91ac0caa0f2a85fef30730ead065d30dc1302cda6
         $context["icon"] = ('' === $tmp = ob_get_clean()) ? '' : new Twig_Markup($tmp, $this->env->getCharset());
         // line 38
         echo "    ";
-        $this->env->loadTemplate("@WebProfiler/Profiler/toolbar_item.html.twig")->display(array_merge($context, array("link" => (isset($context["profiler_url"]) ? $context["profiler_url"] : $this->getContext($context, "profiler_url")))));
+        $this->loadTemplate("@WebProfiler/Profiler/toolbar_item.html.twig", "SecurityBundle:Collector:security.html.twig", 38)->display(array_merge($context, array("link" => (isset($context["profiler_url"]) ? $context["profiler_url"] : $this->getContext($context, "profiler_url")))));
     }
 
     // line 41
@@ -234,6 +226,6 @@ class __TwigTemplate_65c29cb709135c45de91ac0caa0f2a85fef30730ead065d30dc1302cda6
 
     public function getDebugInfo()
     {
-        return array (  218 => 82,  212 => 78,  210 => 77,  207 => 76,  201 => 73,  197 => 71,  195 => 70,  190 => 68,  184 => 64,  181 => 63,  176 => 62,  172 => 60,  170 => 59,  162 => 54,  157 => 51,  155 => 50,  152 => 49,  149 => 48,  141 => 42,  138 => 41,  133 => 38,  130 => 37,  124 => 36,  120 => 35,  117 => 34,  114 => 33,  111 => 32,  107 => 30,  103 => 28,  100 => 27,  94 => 24,  90 => 22,  88 => 21,  81 => 19,  72 => 15,  68 => 13,  65 => 12,  62 => 11,  59 => 10,  56 => 9,  53 => 8,  50 => 7,  47 => 6,  44 => 5,  41 => 4,  38 => 3,  11 => 1,);
+        return array (  210 => 82,  204 => 78,  202 => 77,  199 => 76,  193 => 73,  189 => 71,  187 => 70,  182 => 68,  176 => 64,  173 => 63,  168 => 62,  164 => 60,  162 => 59,  154 => 54,  149 => 51,  147 => 50,  144 => 49,  141 => 48,  133 => 42,  130 => 41,  125 => 38,  122 => 37,  116 => 36,  112 => 35,  109 => 34,  106 => 33,  103 => 32,  99 => 30,  95 => 28,  92 => 27,  86 => 24,  82 => 22,  80 => 21,  73 => 19,  64 => 15,  60 => 13,  57 => 12,  54 => 11,  51 => 10,  48 => 9,  45 => 8,  42 => 7,  39 => 6,  36 => 5,  33 => 4,  30 => 3,  11 => 1,);
     }
 }

@@ -8,15 +8,7 @@ class __TwigTemplate_1a66a114e86392606737356a5feeff84a3e89afbe01eb4a0ae29ce2bcf0
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("@WebProfiler/Profiler/layout.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("@WebProfiler/Profiler/layout.html.twig", "WebProfilerBundle:Collector:config.html.twig", 1);
         $this->blocks = array(
             'toolbar' => array($this, 'block_toolbar'),
             'menu' => array($this, 'block_menu'),
@@ -102,7 +94,7 @@ class __TwigTemplate_1a66a114e86392606737356a5feeff84a3e89afbe01eb4a0ae29ce2bcf0
         $context["text"] = ('' === $tmp = ob_get_clean()) ? '' : new Twig_Markup($tmp, $this->env->getCharset());
         // line 30
         echo "    ";
-        $this->env->loadTemplate("@WebProfiler/Profiler/toolbar_item.html.twig")->display(array_merge($context, array("link" => false)));
+        $this->loadTemplate("@WebProfiler/Profiler/toolbar_item.html.twig", "WebProfilerBundle:Collector:config.html.twig", 30)->display(array_merge($context, array("link" => false)));
         // line 31
         echo "
     ";
@@ -156,7 +148,7 @@ class __TwigTemplate_1a66a114e86392606737356a5feeff84a3e89afbe01eb4a0ae29ce2bcf0
         $context["text"] = ('' === $tmp = ob_get_clean()) ? '' : new Twig_Markup($tmp, $this->env->getCharset());
         // line 55
         echo "    ";
-        $this->env->loadTemplate("@WebProfiler/Profiler/toolbar_item.html.twig")->display(array_merge($context, array("link" => false)));
+        $this->loadTemplate("@WebProfiler/Profiler/toolbar_item.html.twig", "WebProfilerBundle:Collector:config.html.twig", 55)->display(array_merge($context, array("link" => false)));
         // line 56
         echo "
     ";
@@ -276,7 +268,7 @@ class __TwigTemplate_1a66a114e86392606737356a5feeff84a3e89afbe01eb4a0ae29ce2bcf0
         $context["text"] = ('' === $tmp = ob_get_clean()) ? '' : new Twig_Markup($tmp, $this->env->getCharset());
         // line 102
         echo "    ";
-        $this->env->loadTemplate("@WebProfiler/Profiler/toolbar_item.html.twig")->display(array_merge($context, array("link" => (isset($context["profiler_url"]) ? $context["profiler_url"] : $this->getContext($context, "profiler_url")))));
+        $this->loadTemplate("@WebProfiler/Profiler/toolbar_item.html.twig", "WebProfilerBundle:Collector:config.html.twig", 102)->display(array_merge($context, array("link" => (isset($context["profiler_url"]) ? $context["profiler_url"] : $this->getContext($context, "profiler_url")))));
     }
 
     // line 105
@@ -484,6 +476,6 @@ class __TwigTemplate_1a66a114e86392606737356a5feeff84a3e89afbe01eb4a0ae29ce2bcf0
 
     public function getDebugInfo()
     {
-        return array (  470 => 202,  461 => 199,  457 => 198,  454 => 197,  449 => 196,  447 => 195,  439 => 189,  437 => 188,  430 => 184,  423 => 180,  416 => 176,  409 => 172,  402 => 168,  395 => 164,  388 => 160,  381 => 156,  369 => 146,  363 => 143,  359 => 141,  356 => 140,  350 => 137,  346 => 135,  343 => 134,  337 => 131,  333 => 129,  331 => 128,  328 => 127,  323 => 125,  320 => 124,  311 => 122,  308 => 121,  306 => 120,  297 => 113,  294 => 112,  286 => 106,  283 => 105,  278 => 102,  275 => 101,  270 => 98,  264 => 96,  256 => 94,  254 => 93,  249 => 90,  241 => 87,  237 => 85,  234 => 84,  228 => 81,  224 => 79,  221 => 78,  215 => 75,  211 => 73,  208 => 72,  205 => 71,  202 => 70,  199 => 69,  193 => 66,  189 => 65,  186 => 64,  184 => 63,  180 => 62,  176 => 61,  173 => 60,  170 => 59,  164 => 58,  161 => 56,  158 => 55,  155 => 54,  149 => 51,  142 => 47,  138 => 46,  131 => 42,  127 => 40,  124 => 39,  121 => 38,  113 => 34,  110 => 33,  107 => 31,  104 => 30,  98 => 27,  92 => 24,  89 => 23,  81 => 20,  78 => 19,  75 => 18,  72 => 17,  67 => 14,  61 => 12,  53 => 10,  51 => 9,  46 => 6,  43 => 5,  41 => 4,  38 => 3,  11 => 1,);
+        return array (  462 => 202,  453 => 199,  449 => 198,  446 => 197,  441 => 196,  439 => 195,  431 => 189,  429 => 188,  422 => 184,  415 => 180,  408 => 176,  401 => 172,  394 => 168,  387 => 164,  380 => 160,  373 => 156,  361 => 146,  355 => 143,  351 => 141,  348 => 140,  342 => 137,  338 => 135,  335 => 134,  329 => 131,  325 => 129,  323 => 128,  320 => 127,  315 => 125,  312 => 124,  303 => 122,  300 => 121,  298 => 120,  289 => 113,  286 => 112,  278 => 106,  275 => 105,  270 => 102,  267 => 101,  262 => 98,  256 => 96,  248 => 94,  246 => 93,  241 => 90,  233 => 87,  229 => 85,  226 => 84,  220 => 81,  216 => 79,  213 => 78,  207 => 75,  203 => 73,  200 => 72,  197 => 71,  194 => 70,  191 => 69,  185 => 66,  181 => 65,  178 => 64,  176 => 63,  172 => 62,  168 => 61,  165 => 60,  162 => 59,  156 => 58,  153 => 56,  150 => 55,  147 => 54,  141 => 51,  134 => 47,  130 => 46,  123 => 42,  119 => 40,  116 => 39,  113 => 38,  105 => 34,  102 => 33,  99 => 31,  96 => 30,  90 => 27,  84 => 24,  81 => 23,  73 => 20,  70 => 19,  67 => 18,  64 => 17,  59 => 14,  53 => 12,  45 => 10,  43 => 9,  38 => 6,  35 => 5,  33 => 4,  30 => 3,  11 => 1,);
     }
 }

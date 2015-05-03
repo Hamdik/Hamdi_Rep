@@ -1,6 +1,6 @@
 <?php
 
-/* FOSUserBundle:Registration:confirmed.html.twig */
+/* UserBundle:Registration:confirmed.html.twig */
 class __TwigTemplate_8f4ec1634157184f0f2f1975ddc103baa3c40f4d74371dafc4b7d41d5d3b67e6 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -8,15 +8,7 @@ class __TwigTemplate_8f4ec1634157184f0f2f1975ddc103baa3c40f4d74371dafc4b7d41d5d3
         parent::__construct($env);
 
         // line 1
-        try {
-            $this->parent = $this->env->loadTemplate("FOSUserBundle::layout.html.twig");
-        } catch (Twig_Error_Loader $e) {
-            $e->setTemplateFile($this->getTemplateName());
-            $e->setTemplateLine(1);
-
-            throw $e;
-        }
-
+        $this->parent = $this->loadTemplate("FOSUserBundle::layout.html.twig", "UserBundle:Registration:confirmed.html.twig", 1);
         $this->blocks = array(
             'fos_user_content' => array($this, 'block_fos_user_content'),
         );
@@ -61,7 +53,7 @@ class __TwigTemplate_8f4ec1634157184f0f2f1975ddc103baa3c40f4d74371dafc4b7d41d5d3
 
     public function getTemplateName()
     {
-        return "FOSUserBundle:Registration:confirmed.html.twig";
+        return "UserBundle:Registration:confirmed.html.twig";
     }
 
     public function isTraitable()
@@ -71,6 +63,6 @@ class __TwigTemplate_8f4ec1634157184f0f2f1975ddc103baa3c40f4d74371dafc4b7d41d5d3
 
     public function getDebugInfo()
     {
-        return array (  58 => 10,  49 => 9,  46 => 8,  44 => 7,  39 => 6,  36 => 5,  11 => 1,);
+        return array (  50 => 10,  41 => 9,  38 => 8,  36 => 7,  31 => 6,  28 => 5,  11 => 1,);
     }
 }
